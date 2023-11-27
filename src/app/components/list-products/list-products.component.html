@@ -1,7 +1,8 @@
-<div class="container">
+<div id="productos" class="container">
 
     <div class="title">
         <h4>Listado de Productos</h4>
+        <button class="btn col col-lg-4 btn-danger btn-block ml-4" (click)="downloadPDF()">Download PDF</button>
         <button type="button" class="btn btn-primary" routerLink="/add">Add Product</button>
     </div>
 
@@ -27,9 +28,9 @@
                 <button (click)="deleteProduct(item.id!)" type="button" class="btn btn-secondary btn-sm ms-2">delete</button>
             </td>
           </tr>
-          
+
         </tbody>
       </table>
-    
+
 
 </div>
